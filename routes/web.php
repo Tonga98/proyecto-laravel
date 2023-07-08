@@ -17,7 +17,7 @@ use App\Models\Image;
 Route::get('/', function () {
     $images = Image::all();
     return view('imagen.principal', ['images' => $images] );
-});
+})->middleware(['auth'])->name('inicio');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

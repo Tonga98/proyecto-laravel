@@ -24,7 +24,7 @@ class UserFactory extends Factory
             'role' => $this->faker->randomElement(['admin', 'user']),
             'name' => $this->faker->name,
             'nick' => $this->faker->userName,
-            'username' => $this->faker->unique()->userName,
+            'surname' => $this->faker->unique()->userName,
             'email' => $this->faker->unique()->safeEmail,
             'password' => bcrypt('password'), // Puedes ajustar la contraseña a tu preferencia
             'image' => $this->faker->imageUrl(), // Puedes ajustar la generación de la imagen a tu preferencia
