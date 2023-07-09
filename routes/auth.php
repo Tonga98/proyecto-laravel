@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ImageController;
 
 Route::middleware('guest')->group(function () {
     Route::get('register', [RegisteredUserController::class, 'create'])
@@ -59,4 +60,8 @@ Route::middleware('auth')->group(function () {
                 ->name('logout');
 
     Route::get('user/avatar/{fileName}', [ProfileController::class, 'getImage'])->name('user.avatar');
+
+    Route::get('image/create', [ImageController::class, 'create'])->name('image.create');
+    Route::post('image/upload', [ImageController::class, 'store'])->name('image.upload');
+    Route::get('image/{imagePath}', [ImageController::class, 'getImage'])->name('image');
 });

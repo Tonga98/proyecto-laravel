@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('inicio')" :active="request()->routeIs('subirFoto')">
+                    <x-nav-link :href="route('image.create')" :active="request()->routeIs('subirFoto')">
                         {{ __('Subir foto') }}
                     </x-nav-link>
                 </div>
