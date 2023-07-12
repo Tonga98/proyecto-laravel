@@ -70,7 +70,7 @@
             <x-input-label for="image" :value="__('Avatar')" />
 
             @if($user->image)
-                <div >
+                <div>
                 <img class="rounded-full" src="{{ route('user.avatar', ['fileName' => $user->image]) }}" alt="avatar-img"/>
                 </div>
             @endif

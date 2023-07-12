@@ -54,6 +54,7 @@ class ImageController extends Controller
         }
         return redirect(route('inicio'));
     }
+
     public function getImage($imagePath){
         $file = Storage::disk('images')->get($imagePath);
         return new Respon($file, 200);
