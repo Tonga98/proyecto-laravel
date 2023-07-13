@@ -66,4 +66,5 @@ Route::middleware('auth')->group(function () {
     Route::get('image/{imagePath}', [ImageController::class, 'getImage'])->name('image');
     Route::get('home/like', [\App\Http\Controllers\homeController::class, 'getMg'])->name('home.like');
     Route::post('comment/add', [\App\Http\Controllers\CommentController::class, 'store'])->name('comment.add');
+    Route::get('image/detail/{image}', [ImageController::class, 'detail'])->name('image.detail');
 });

@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .avatar {
-        height: 200px;
-        border-radius: 10px;
-    }
+.modal.hidden {
+    /* Estilos para ocultar el modal por defecto */
+    display: none;
+}
+
+.modal.open {
+    /* Estilos para mostrar el modal cuando tenga la clase "open" */
+    display: block;
 }

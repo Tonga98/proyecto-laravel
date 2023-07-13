@@ -13,7 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+        <script src="{{ asset('js/custom.js') }}"></script>
 
     </head>
     <body class="font-sans antialiased">

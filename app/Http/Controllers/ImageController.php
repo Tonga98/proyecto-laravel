@@ -60,18 +60,7 @@ class ImageController extends Controller
         return new Respon($file, 200);
     }
 
-   // public function resize(){
-   //     $images = Img::all();
-   //     $folderpath = "../storage/app/images";
-   //     $files = scandir($folderpath);
-   //     var_dump($files);
-   //     $i=3;
-   //     foreach ($files as $file) {
-   //         if (!in_array($file, ['.', '..'])) {
-   //             $image = Image::make($folderpath . '/' . $file);
-   //             $image->fit(500, 500)->orientate()->save();
-   //         }
-   //     }
-   //     echo 'Listo';
-   // }
+   public function detail(Img $image){
+        return view('imagen.detail',['image' => $image]);
+   }
     }
