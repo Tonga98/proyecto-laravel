@@ -1,1 +1,1 @@
-Proyecto web tipo instagram que desarrolle (no finalize) para poner en practica mis conocimientos
+Proyecto web tipo instagram que desarrolle (no finalize) para poner en practica mis conocimientos utilizando laravel
